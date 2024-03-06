@@ -5,7 +5,7 @@ import { Directive, HostBinding, HostListener, Input } from "@angular/core";
 })
 
 export class InputBackgroundDirective {
-    @Input('bgColor') appInputBackground: string = 'white'
+    @Input() appInputBackground: string = 'white'
     @Input('tColor') textColor: string = 'black'
 
     @HostBinding('style.background') bgColor: string = ''
